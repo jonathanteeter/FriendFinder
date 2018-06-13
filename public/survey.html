@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<style>
+.btn {
+    width: 100%;
+}
+
+    /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    width: 500px;
+    margin: 0 auto;
+    z-index: 1; /* Sit on top */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 28px;
+    font-size: 24px;
+    text-align: center;
+    border: 4px solid blue;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <h2>Survey Questions</h2>
+            <hr>
+            <h3><strong>About You</strong></h3>
+            
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+            
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required>
+
+            <h3><strong>Question 1</strong></h3>
+            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <select id="q1">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 2</strong></h3>
+            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <select id="q2">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 3</strong></h3>
+            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <select id="q3">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 4</strong></h3>
+            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <select id="q4">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 5</strong></h3>
+            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <select id="q5">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 6</strong></h3>
+            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <select id="q6">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 7</strong></h3>
+            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <select id="q7">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 8</strong></h3>
+            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <select id="q8">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 9</strong></h3>
+            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <select id="q9">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <h3><strong>Question 10</strong></h3>
+            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <select id="q10">
+                <option value></option>
+                <option value = "1">1 Strongly Disagree</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5 Strongly Agree</option>
+            </select>
+
+            <br>
+            <br>
+            <input type='submit' class="btn btn-primary" id='submit' value='Submit'>
+
+            <footer class="footer">
+                <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jteeter58/FriendFinder">GitHub Repo</a></p>
+                </div>
+            </footer>
+
+        </form>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script type="text/javascript">
+    
+        // Capture data from survey
+        $("#submit").on("click", function(event) {
+
+            event.preventDefault();
+
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+            };
+            
+            console.log('new friend = ' + newFriend.name);
+       
+            // Place into object newFriend
+            $.post("/api/friends", newFriend,
+                function(data) {
+                    console.log('new friend = ' + newFriend.name);
+                    console.log(data);
+
+                    // If a table is available... tell user they are booked.
+                    if (data) {
+                        // alert("Yay! You are officially booked!");
+
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+
+                        var image = newFriend.photo;
+
+                        // test photo - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfgREWszeDTi3vWdWth3yxlVSlji9aoA33YxN81nuEucYvJOX_
+
+                        modal.style.display = "block";
+                        $('.modal-content').append("<p><strong>Best Match is ... " + newFriend.name + "</strong></p>");
+                        $(".modal-content").wrap('<a href=' + image + '>');
+                        $('.modal-content').append("<p>(Click on link for picture)</p>");  
+                    }
+
+                    // When the survey is not completed...
+                    else {
+                        alert("Please complete the survey!");
+                    }
+            });
+        });
+
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
