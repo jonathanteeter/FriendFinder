@@ -36,5 +36,5 @@ None
 - Node.js is a back-end technology that required practice (like with anything) to get it.
 - Additional use of NPM packages was useful but required some trial and error.
 
-## Link to [My Portfolio](https://teeterjm58.github.io/Basic-Portfolio/portfolio.html)
+## Link to [My Portfolio](https://teeterjm58.github.io/Responsive-Portfolio/portfolio.html)
 
