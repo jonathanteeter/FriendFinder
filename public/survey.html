@@ -87,7 +87,7 @@
             </select>
 
             <h3><strong>Question 3</strong></h3>
-            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
             <select id="q3">
                 <option value></option>
                 <option value = "1">1 Strongly Disagree</option>
@@ -98,7 +98,7 @@
             </select>
 
             <h3><strong>Question 4</strong></h3>
-            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <h4>You rarely do something just out of sheer curiosity.</h4>
             <select id="q4">
                 <option value></option>
                 <option value = "1">1 Strongly Disagree</option>
@@ -120,7 +120,7 @@
             </select>
 
             <h3><strong>Question 6</strong></h3>
-            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <h4>It is often difficult for you to relate to other people’s feelings.</h4>
             <select id="q6">
                 <option value></option>
                 <option value = "1">1 Strongly Disagree</option>
@@ -131,7 +131,7 @@
             </select>
 
             <h3><strong>Question 7</strong></h3>
-            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
             <select id="q7">
                 <option value></option>
                 <option value = "1">1 Strongly Disagree</option>
@@ -142,7 +142,7 @@
             </select>
 
             <h3><strong>Question 8</strong></h3>
-            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <h4>You rarely get carried away by fantasies and ideas.</h4>
             <select id="q8">
                 <option value></option>
                 <option value = "1">1 Strongly Disagree</option>
@@ -153,7 +153,7 @@
             </select>
 
             <h3><strong>Question 9</strong></h3>
-            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
             <select id="q9">
                 <option value></option>
                 <option value = "1">1 Strongly Disagree</option>
@@ -164,7 +164,7 @@
             </select>
 
             <h3><strong>Question 10</strong></h3>
-            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <h4>You feel more energetic after spending time with a group of people.</h4>
             <select id="q10">
                 <option value></option>
                 <option value = "1">1 Strongly Disagree</option>
@@ -222,10 +222,8 @@
                     console.log('new friend = ' + newFriend.name);
                     console.log(data);
 
-                    // If a table is available... tell user they are booked.
+                    // Use Modal to tell user their best matchrsrs
                     if (data) {
-                        // alert("Yay! You are officially booked!");
-
                         // Get the modal
                         var modal = document.getElementById('myModal');
 
@@ -243,13 +241,12 @@
                         }
 
                         var image = newFriend.photo;
-
                         // test photo - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfgREWszeDTi3vWdWth3yxlVSlji9aoA33YxN81nuEucYvJOX_
 
                         modal.style.display = "block";
-                        $('.modal-content').append("<p><strong>Best Match is ... " + newFriend.name + "</strong></p>");
-                        $(".modal-content").wrap('<a href=' + image + '>');
-                        $('.modal-content').append("<p>(Click on link for picture)</p>");  
+                        $('.modal-content').append("<p><strong>Best Match is ... " + data.bestFriend + "</strong></p>");
+                        $(".modal-content").wrap('<a href=' + data.bestPhoto + '>');
+                        $('.modal-content').append("<p>(Click for picture)</p>");  
                     }
 
                     // When the survey is not completed...
@@ -258,7 +255,6 @@
                     }
             });
         });
-
     </script>
 
     <!-- Latest compiled and minified JavaScript -->
