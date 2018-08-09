@@ -6,10 +6,10 @@ This is a full-stack application that will take in information from users' surve
 * Each question is answered on a scale from 1 to 5 on the degree to which the user agrees or disagrees.
 * The user opts to take the Survey from the home page, provides their name and email address, then answers the questions.
 * The user submits the survey. The app provides the user which friend is the best match by reviewing the closest number of answers.
-* Here are the Setup requirements:
+* Here are the Design requirements:
     * 'server.js' contains the npm packages:  express, body-parser and path.
     * 'htmlRoutes.js' file contains two routes: 
-        *  A GET Route to /survey which should display the survey page.
+        *  A GET route to /survey that displays the survey page.
         * A default, catch-all route that leads to home.html which displays the home page.
     * 'apiRoutes.js file contains two routes:
         *  A GET route with the url /api/friends. This is used to display a JSON of all possible friends.
@@ -22,6 +22,7 @@ This is a full-stack application that will take in information from users' surve
     * Body Parser (Express middleware) that reads a form's input and stores it as a JavaScript object accessible through "req.body"
     * Path module (Node.js) that provides a way of working with directories and file paths
     * JavaScript with jQuery library
+    * Heroku (Cloud Application Platform)
 
 ## Challenges
 * Node-Express technology requires some in-depth understanding and practice in how the back-end serves the front-end. 
