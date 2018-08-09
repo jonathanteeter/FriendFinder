@@ -1,5 +1,5 @@
 # FriendFinder
-This is a full-stack application that will take in information from users' surveys and display the name and photo of the user with the best overall match.  This is basically a dating or a compatibility-based "FriendFinder" application.  The answers from the survey are compared with those from other users.
+This is a full-stack application that will take in information from users' surveys and display the name and photo of the user with the best overall match.  This is basically a compatibility-based "FriendFinder" application.  The answers from the survey are compared with those from other users.
 
 ## Design & Technology
 * Survey contains 10 questions to screen for 'best match' friends.
