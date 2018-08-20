@@ -10,8 +10,8 @@ This is a full-stack application that will take in information from users' surve
     * 'server.js' contains the npm packages:  express, body-parser and path.
     * 'htmlRoutes.js' file contains two routes: 
         *  A GET route to /survey that displays the survey page.
-        * A default, catch-all route that leads to home.html which displays the home page.
-    * 'apiRoutes.js file contains two routes:
+        * A default (catch-all) route that leads to home.html which displays the home page.
+    * 'apiRoutes.js' file contains two routes:
         *  A GET route with the url /api/friends. This is used to display a JSON of all possible friends.
         *  A POST routes /api/friends. This is used to handle incoming survey results. This route will also be used to handle the compatibility logic. 
     * Application data is saved inside of app/data/friends.js as an array of objects. 

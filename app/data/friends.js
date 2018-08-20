@@ -7,8 +7,8 @@
 
 var friendArray = [
     {
-        "name":"Jimmy",
-        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXYpLBbn1mUgQENEMW5O2Hd85E9h2qcI4XnYWLb4qyTNHYyE-SQ",
+        "name":"Ethan",
+        "photo":"https://images.pexels.com/photos/936043/pexels-photo-936043.jpeg?auto=compress&cs=tinysrgb&h=350",
         "scores":[
             5,
             1,
@@ -21,10 +21,26 @@ var friendArray = [
             4,
             1
         ]
-    },      
+    },
     {
-        "name":"Mike",
-        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuldq0dsxm6Q4m_nN3DgGSLWWUlHW7Thbqx_hFim8xTYMryoJ",
+        "name":"Becca",
+        "photo":"https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "scores":[
+            5,
+            1,
+            4,
+            4,
+            5,
+            2,
+            3,
+            1,
+            2,
+            5
+        ]
+    },
+    {
+        "name":"Benjamin",
+        "photo":"https://images.pexels.com/photos/247917/pexels-photo-247917.jpeg?auto=compress&cs=tinysrgb&h=350",
         "scores":[
             3,
             5,
@@ -39,8 +55,24 @@ var friendArray = [
         ]
     },
     {
+        "name":"Rachel",
+        "photo":"https://images.pexels.com/photos/324658/pexels-photo-324658.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "scores":[
+            1,
+            3,
+            1,
+            5,
+            5,
+            2,
+            2,
+            5,
+            4,
+            4
+        ]
+    },
+    {
         "name":"Venkat",
-        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS062tX8SbBA6neSSPd8cO5bLcWrKLBPE6n9sCuVDRFMMLSbt6R",
+        "photo":"https://images.pexels.com/photos/819482/pexels-photo-819482.jpeg?auto=compress&cs=tinysrgb&h=350",
         "scores":[
             2,
             2,
@@ -55,8 +87,24 @@ var friendArray = [
         ]
     },
     {
-        "name":"Sammy",
-        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi3vgonSu9MhvzWGa7qybqGhE7srmoCsTml_rig6-Lf-v958GVw",
+        "name":"Amelia",
+        "photo":"https://images.pexels.com/photos/372042/pexels-photo-372042.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "scores":[
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ]
+    },
+    {
+        "name":"Liam",
+        "photo":"https://images.pexels.com/photos/709188/pexels-photo-709188.jpeg?auto=compress&cs=tinysrgb&h=350",
         "scores":[
             1,
             1,
@@ -71,8 +119,24 @@ var friendArray = [
         ]
     },
     {
-        "name":"Eddie",
-        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKRcA1rCqrKqC9aSvIJTJoxtlcANcmEl0n42nIrMfPiyKI6ORmZw",
+        "name":"Sophia",
+        "photo":"https://images.pexels.com/photos/539727/pexels-photo-539727.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "scores":[
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ]
+    },
+    {
+        "name":"Noah",
+        "photo":"https://images.pexels.com/photos/450212/pexels-photo-450212.jpeg?auto=compress&cs=tinysrgb&h=350",
         "scores":[
             3,
             3,
@@ -85,8 +149,23 @@ var friendArray = [
             3,
             3
         ]
-    }                 
-
+    },
+    {
+        "name":"Mia",
+        "photo":"https://images.pexels.com/photos/818819/pexels-photo-818819.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "scores":[
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ]
+    }                     
 ];
   
   // Note how we export the array. This makes it accessible to other files using require.
